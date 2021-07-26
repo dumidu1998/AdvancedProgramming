@@ -14,11 +14,13 @@ public class Main {
 
         // Create new product object
         Product pro1 = new Product("Anchor Powdered Milk 1kg");
+        // Create another new product object
         Product pro2 = new Product("Sunlight Soap Bar");
 
         // Create new order object
         Order ord1 = new Order(ccus1);
 
+        // Add new orderlines to ord1
         OrderLine line1 = new OrderLine(1, 1150, ord1, pro1);
         OrderLine line2 = new OrderLine(5, 3500, ord1, pro2);
 
