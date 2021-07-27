@@ -14,6 +14,7 @@ public class Main {
 
         // Create new product object
         Product pro1 = new Product("Anchor Powdered Milk 1kg");
+
         // Create another new product object
         Product pro2 = new Product("Sunlight Soap Bar");
 
@@ -24,7 +25,7 @@ public class Main {
         OrderLine line1 = new OrderLine(1, 1150, ord1, pro1);
         OrderLine line2 = new OrderLine(5, 3500, ord1, pro2);
 
-        // Print the order details
+        // Print the order details of ord1 including customer details
         ord1.printOrder(ord1);
         line1.printOrderline(line1);
         line1.printOrderline(line2);
