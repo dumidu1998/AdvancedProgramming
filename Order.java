@@ -13,4 +13,9 @@ public class Order {
         this.customer = customer;
     }
 
+    public Customer printOrder(Order order) {
+        customer.printCustomer(order.getCustomer());
+        return new Customer(customer.getName(), customer.getAddress()); // one na
+    }
+
 }

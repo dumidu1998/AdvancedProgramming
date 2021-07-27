@@ -24,7 +24,11 @@ public class Main {
         OrderLine line1 = new OrderLine(1, 1150, ord1, pro1);
         OrderLine line2 = new OrderLine(5, 3500, ord1, pro2);
 
-        System.out.println("Hello World!");
+        // Print the order details
+        ord1.printOrder(ord1);
+        line1.printOrderline(line1);
+        line1.printOrderline(line2);
+
     }
 
 }

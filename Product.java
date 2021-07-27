@@ -13,4 +13,8 @@ public class Product {
         this.name = name;
     }
 
+    public void printProduct(Product product) {
+        System.out.println("Product Name: " + product.getName());
+    }
+
 }

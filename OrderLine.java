@@ -43,4 +43,12 @@ public class OrderLine {
         this.order = order;
     }
 
+    public void printOrderline(OrderLine orderline) {
+        orderline.getProduct().printProduct(orderline.getProduct());
+        System.out.println("Unit Price: " + orderline.getPrice());
+        System.out.println("Quantity: " + orderline.getQuantity());
+
+        // Order odr = order.printOrder(orderline.getCustomer());
+    }
+
 }

@@ -25,4 +25,9 @@ public class Customer {
         this.address = address;
     }
 
+    public void printCustomer(Customer customer) {
+        System.out.println("Customer Name: " + customer.getName());
+        System.out.println("Customer Address: " + customer.getAddress());
+    }
+
 }
