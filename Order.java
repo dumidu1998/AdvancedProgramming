@@ -1,4 +1,5 @@
 public class Order {
+    private String id;
     private Customer customer;
 
     public Order(Customer customer) {
@@ -15,7 +16,7 @@ public class Order {
 
     public Customer printOrder(Order order) {
         customer.printCustomer(order.getCustomer());
-        return new Customer(customer.getName(), customer.getAddress()); // one na
+        return new Customer(customer.getCustomerId(), customer.getName(), customer.getAddress()); // one na
     }
 
 }

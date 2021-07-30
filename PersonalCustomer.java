@@ -3,8 +3,8 @@ public class PersonalCustomer extends Customer {
 
     private String creditCardNumber;
 
-    public PersonalCustomer(String name, String address, String creditCardNumber) {
-        super(name, address);
+    public PersonalCustomer(String id, String name, String address, String creditCardNumber) {
+        super(id, name, address);
         this.creditCardNumber = creditCardNumber;
     }
 

@@ -1,4 +1,5 @@
 public class OrderLine {
+    private String lineId;
     private float quantity;
     private float price;
     private Order order;
@@ -23,6 +24,13 @@ public class OrderLine {
         return quantity;
     }
 
+    public void printOrderline(OrderLine orderline) {
+        orderline.getProduct().printProduct(orderline.getProduct());
+        System.out.println("Unit Price: " + orderline.getPrice());
+        System.out.println("Quantity: " + orderline.getQuantity());
+
+    }
+
     public void setQuantity(float quantity) {
         this.quantity = quantity;
     }
@@ -41,14 +49,6 @@ public class OrderLine {
 
     public void setOrder(Order order) {
         this.order = order;
-    }
-
-    public void printOrderline(OrderLine orderline) {
-        orderline.getProduct().printProduct(orderline.getProduct());
-        System.out.println("Unit Price: " + orderline.getPrice());
-        System.out.println("Quantity: " + orderline.getQuantity());
-
-        // Order odr = order.printOrder(orderline.getCustomer());
     }
 
 }

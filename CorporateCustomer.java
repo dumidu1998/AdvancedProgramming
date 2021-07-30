@@ -4,8 +4,8 @@ public class CorporateCustomer extends Customer {
     private String contactName;
     private int creditLimit;
 
-    public CorporateCustomer(String name, String address, String contactName, int creditLimit) {
-        super(name, address);
+    public CorporateCustomer(String id, String name, String address, String contactName, int creditLimit) {
+        super(id, name, address);
         this.contactName = contactName;
         this.creditLimit = creditLimit;
     }

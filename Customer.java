@@ -1,12 +1,20 @@
-
 public class Customer {
-
+    private String customerId;
     private String name;
     private String address;
 
-    public Customer(String name, String address) {
+    public Customer(String customerID, String name, String address) {
         this.name = name;
         this.address = address;
+        this.customerId = customerID;
+    }
+
+    public String getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(String customerId) {
+        this.customerId = customerId;
     }
 
     public String getName() {

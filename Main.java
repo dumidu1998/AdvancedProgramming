@@ -4,19 +4,20 @@ public class Main {
     public static void main(String[] args) {
 
         // Create new PersonalCustomer object
-        PersonalCustomer pcus1 = new PersonalCustomer("Anura kumara", "No.12, Maya Av, Colombo 5",
+        PersonalCustomer pcus1 = new PersonalCustomer("1", "Anura kumara", "No.12, Maya Av, Colombo 5",
                 "1485-4521-4715-4521");
         // create new CorporatCustomer object
-        CorporateCustomer ccus1 = new CorporateCustomer("Abans PLC", "No 12, Galle Rd, Col-5", "Saman Kumara", 25000);
+        CorporateCustomer ccus1 = new CorporateCustomer("2", "Abans PLC", "No 12, Galle Rd, Col-5", "Saman Kumara",
+                25000);
 
         // Create new employee object
         Employee emp1 = new Employee("Jayantha Kumara", "GR-13113");
 
         // Create new product object
-        Product pro1 = new Product("Anchor Powdered Milk 1kg");
+        Product pro1 = new Product("1", "Anchor Powdered Milk 1kg");
 
         // Create another new product object
-        Product pro2 = new Product("Sunlight Soap Bar");
+        Product pro2 = new Product("2", "Sunlight Soap Bar");
 
         // Create new order object for a customer ccus1
         Order ord1 = new Order(ccus1);
